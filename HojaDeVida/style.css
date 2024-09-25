@@ -1,0 +1,209 @@
+.prinContainer {
+  display: flex;        /* contenedor principal, donde va a tomar el tamaño total de la tarjeta*/
+  height: 1100px;
+  width: 1000px;
+  border-radius: 15px;
+  margin: auto;         /* centra automaticamente toda la tarjeta en el medio */
+  background-color: rgb(224, 224, 224);
+}
+
+.blackSeparacion {
+  background-color: #0d1321;
+  flex-basis: 35%;            /* el tamaño la parte negra de la tarjeta va a ser el 35% del contenedor princiapl*/ 
+  color: white;           /*Flex-basis: Si los ítems no tiene un tamaño entonces el tamaño de su contenido es usado como flex-basis.*/
+  border-radius: 15px;
+}
+
+.whiteSeparacion {
+  flex-basis: 65%;                        
+  display: flex;              /* La parte blanca va a usar el 65% del contenedor principal */
+  flex-direction: column;
+}
+
+p{
+  font-family: "Manuale";
+  font-size: 15px;        /* Tamaño de la fuente */
+}
+
+.image1{     /* Imagen de perfil */
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 60px;
+  margin-left: 80px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.titlesGray{    /* Titulos de la parte negra */
+  text-align: center;
+  font-family: "Barlow";
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+
+.lineas{      /* Lineas de separacion */
+  display: flex;
+  width: 150px;
+}
+
+.lineas1{
+  display: flex;
+  width: 130px;
+}
+
+#one{
+  margin-left: 0;
+  margin-top: -35px;
+}
+
+#two{
+  margin-right: 0;
+  margin-bottom: -35px;
+}
+
+/* Ubicacion de los iconos de la parte negra */
+
+.llamada, .mail, .ident, .locate, .refer1, .refer2{      /* tanto el svg como el p son flex y un top*/
+  display: flex;
+  margin-top: 20px;
+}
+
+
+.llamada svg, .mail svg, .ident svg, .locate svg{    /* posicionar el icono */
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 70px;
+}
+
+.llamada p, .mail p, .ident p, .locate p, .refer1 p, .refer2 p{    /* se cambia el tama;o de los p*/
+  font-size: 17px;
+}
+
+.mail, .ident, .locate{    /* correr un poquito hacia arriba */
+  margin-top: -5px;
+}
+
+
+.refer1 svg, .refer2 svg{
+  margin-top: 13px;
+  margin-right: 10px;
+  margin-left: 70px;
+}
+
+.refer1 p, .refer2 p{
+  margin-top: 12px;
+}
+
+.addedInfo{
+  margin-left: 95px;
+  margin-top: -5px;
+}
+
+.lastone{
+  margin-bottom: 30px;
+}
+
+.links{
+  margin-top: 32px;
+  margin-bottom: 30px;
+}
+
+a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.idioma{
+  margin-top: 30px;
+  word-spacing: 40px;
+}
+
+
+/*? Parte blanca */
+
+
+.title2{
+  font-size: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: "JetBrains Mono";
+}
+
+.title3{
+  font-size: 17px;
+  margin-top: -20px;  
+  margin-left: 20px;
+  font-family: "JetBrains Mono";
+  font-weight: 300;
+}
+
+.separador{
+  background-color: black;
+  margin-top: -4px;
+  display: flex; 
+  width: 504px;
+  height: 2px;
+  border: none;
+}
+
+.secondTitles{
+  margin-top: 14px;
+  margin-left: 20px;
+  font-family: "JetBrains Mono";
+  font-size: 19px;
+}
+
+.parrafo{
+  margin-top: -10px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.parrafo1{
+  margin-top: -10px;
+  margin-left: 60px;
+}
+
+.threetitle{
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+
+/* Creacion de la tabla */
+
+table{
+  margin-left: 30px;
+  margin-top: -10px;
+}
+
+
+tr{
+  font-family: "Manuale";
+}
+
+td > div{        /*! Como los elementos dentro de la tabla no se pueden manipular con flex ni grid ni nada*/
+  margin-left: 0px;   /** Se sumergen dentro de un div, ya que dentro de este si se pueden manipular */
+  display: flex;        /* flex para cuadrar el icono y el texto en una sola linea*/
+  flex-direction: row;   /* colocarlos en horizontal en filas, porque con flex se ponen en columnas*/
+  align-items: center;  /* Alinear items dentro de su propia caja, se alinea tanto el svg como texto*/
+  width: 120px;
+  height: 30px;      /* Si el tamaño del contenido es mas que el ancho del div (width)*/
+                      /* Se disminuye el tamaño del icono, por respetar el tamaño del div*/
+}
+
+td > div > svg{
+  margin-right: 5px;  /* margen derecho para separar el icono del texto*/
+} 
+
+/* la ubicacion de los iconos::after
+
+  1. se crea un div dentro de los td, ya que con los div se tiene mucha mas libertad para manipular los elementos
+    - dentro de este div se colocan los iconos y los textos; para estructurarlo mucho mejor y poder manipularlo
+  2. se coloca un display flex para que los elementos se coloquen en una sola linea
+  3. se coloca un flex-direction row para que los elementos se coloquen en horizontal
+  4. se coloca un align-items center para que los elementos se coloquen en el centro de su caja
+  5. 
+  */
