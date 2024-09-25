@@ -1,0 +1,168 @@
+.prinContainer {
+  display: flex;
+  height: 1100px;
+  width: 1000px;
+  border-radius: 15px;
+}
+
+.blackSeparacion {
+  background-color: #0d1321;
+  flex-basis: 35%;
+  color: white;
+}
+
+.whiteSeparacion {
+  flex-basis: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+p{
+  font-family: "Manuale";
+  font-size: 15px;
+}
+
+.image1{
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 60px;
+  margin-left: 80px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.titlesGray{
+  text-align: center;
+  font-family: "Barlow";
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+
+.lineas{
+  display: flex;
+  width: 150px;
+}
+
+#one{
+  
+  margin-left: 0;
+  margin-top: -35px;
+}
+
+#two{
+  margin-right: 0;
+  margin-bottom: -35px;
+}
+
+.llamada, .mail, .ident, .locate, .refer1, .refer2{      /* tanto el svg como el p son flex y un top*/
+  display: flex;
+  margin-top: 20px;
+}
+
+
+.llamada svg, .mail svg, .ident svg, .locate svg{    /* posicionar el icono */
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 70px;
+}
+
+.llamada p, .mail p, .ident p, .locate p, .refer1 p, .refer2 p{    /* se cambia el tama;o de los p*/
+  font-size: 17px;
+}
+
+.mail, .ident, .locate{    /* correr un poquito hacia arriba */
+  margin-top: -5px;
+}
+
+
+.refer1 svg, .refer2 svg{
+  margin-top: 13px;
+  margin-right: 10px;
+  margin-left: 70px;
+}
+
+.refer1 p, .refer2 p{
+  margin-top: 12px;
+}
+
+.addedInfo{
+  margin-left: 95px;
+  margin-top: -5px;
+}
+
+.lastone{
+  margin-bottom: 30px;
+}
+
+.links{
+  margin-top: 32px;
+  margin-bottom: 30px;
+
+}
+
+a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.title2{
+  font-size: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: "JetBrains Mono";
+}
+
+.title3{
+  font-size: 17px;
+  margin-top: -20px;
+  margin-left: 20px;
+  font-family: "JetBrains Mono";
+  font-weight: 300;
+}
+
+.separador{
+  background-color: black;
+  margin-top: -4px;
+  display: flex; 
+  width: 504px;
+  height: 2px;
+  border: none;
+}
+
+.secondTitles{
+  margin-top: 14px;
+  margin-left: 20px;
+  font-family: "JetBrains Mono";
+  font-size: 19px;
+}
+
+.parrafo{
+  margin-top: -10px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.parrafo1{
+  margin-top: -10px;
+  margin-left: 60px;
+}
+
+.threetitle{
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+table{
+  margin-left: 30px;
+}
+
+.idioma{
+  margin-top: 30px;
+  word-spacing: 40px;
+}
+
+tr{
+  font-family: "Manuale";
+}
